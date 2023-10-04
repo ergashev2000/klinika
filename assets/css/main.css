@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.max-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@layer components {
+    .primary-btn {
+        @apply py-2 px-5 text-white rounded-full font-semibold text-center bg-primarybold shadow-lg cursor-pointer;
+    }
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px !important;
+    background-color: #F3FEFE;
+    min-width: 40px !important;
+    height: 40px !important;
+    border-radius: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2px black;
+}
+
+.swiper-pagination>span {
+    width: 16px;
+    height: 16px;
+    background-color: #33D9DA;
+}
+
+.swiper-pagination {
+    bottom: -5px !important;
+}
