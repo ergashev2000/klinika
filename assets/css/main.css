@@ -15,6 +15,10 @@
 }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
     font-size: 20px !important;
@@ -37,3 +41,4 @@
 .swiper-pagination {
     bottom: -5px !important;
 }
+

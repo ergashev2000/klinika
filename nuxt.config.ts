@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["nuxt-swiper"],
-  swiper: {
-    modules: ["navigation", "pagination", 'scrollbar', 'a11y'],
-  },
   css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {

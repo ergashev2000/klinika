@@ -6,6 +6,7 @@
     :pagination="{ clickable: true }"
     :navigation="true"
     :loop="loop"
+    :breakpoints="breakpoints"
   >
     <slot />
   </swiper>
@@ -16,7 +17,9 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 const modules = [Navigation, Pagination, Scrollbar, A11y];
 
-const { view, loop } = defineProps(['view','loop']);
+const { view, loop, breakpoints } = defineProps(['view', 'loop', 'breakpoints']);
+
+
 </script>
 
 <style scoped>

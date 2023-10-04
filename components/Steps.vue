@@ -1,23 +1,31 @@
 <template>
   <section class="max-container px-5">
     <div class="bg-second rounded-2xl shadow">
-      <div class="p-10">
-        <div class="flex gap-10">
-          <div class="w-1/2 flex gap-5 flex-col">
+      <div class="p-10 max-sm:p-5">
+        <div class="flex gap-10 max-lg:flex-col">
+          <div class="w-1/2 max-lg:w-full flex gap-5 flex-col">
             <h2 class="text-primary text-2xl font-semibold pb-5">
               Технология профессиональной гигиены полости рта
               <span class="text-primarybold"> в 4 этапа</span>
             </h2>
 
             <p class="text-primary">Посмотрите видео о технологии</p>
-            <div class="w-full bg-red-500 h-72"></div>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/YuFwvXVCEUA"
+              title="Отзыв пациента - SmileDesign.uz"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
 
             <Button class="w-fit px-16 bg-second text-brown">
               Узнать цены
             </Button>
           </div>
 
-          <ul class="[&>li]:list-disc space-y-5 pl-8 text-xl w-1/2 text-brown">
+          <ul class="[&>li]:list-disc space-y-5 pl-8 text-xl w-1/2 text-brown max-lg:w-full max-sm:text-sm max-sm:pl-2 ">
             <li>
               Максимальная чистка в труднодоступных местах от камня и налета
             </li>
@@ -35,15 +43,15 @@
         </div>
       </div>
       <div
-        class="bg-[url('~/assets/images/steps-banner.png')] bg-cover w-full bg-second p-20 rounded-b-3xl mb-5"
+        class="bg-[url('~/assets/images/steps-banner.png')] bg-cover w-full bg-second p-20 rounded-b-3xl mb-5 max-lg:p-2 max-lg:pt-5"
       >
         <div class="flex gap-5 flex-col w-full">
-          <div class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl shadow">
+          <div class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl shadow max-lg:w-full">
             <i
-              class="text-5xl font-bold bg-white p-5 rounded-full text-primarybold w-24 h-22 flex justify-center items-center"
+              class="text-5xl font-bold h-fit bg-white p-5 rounded-full text-primarybold w-24 h-22 flex justify-center items-center "
               >1</i
             >
-            <p class="w-full font-semibold py-1">
+            <p class="w-full font-semibold py-1 max-sm:text-sm">
               Ультразвуковым аппаратом производится максимальная чистка в
               труднодоступных местах от поддесневого и наддесневого камня и
               налета.
@@ -51,38 +59,40 @@
           </div>
 
           <div
-            class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl mr-24 self-center shadow"
+            class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl mr-24 self-center shadow max-lg:w-full max-lg:mr-0"
           >
             <i
               class="text-5xl font-bold bg-white p-5 rounded-full text-primarybold w-24 h-22 flex justify-center items-center"
               >2</i
             >
-            <p class="w-full font-semibold py-1">
+            <p class="w-full font-semibold py-1 max-sm:text-sm ">
               Применение AIR FLOW не доставляет дискомфорта и боли, очищая
               межзубные отложения.
             </p>
           </div>
 
           <div
-            class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl ml-24 self-center shadow"
+            class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl ml-24 self-center shadow max-lg:w-full max-lg:ml-0"
           >
             <i
               class="text-5xl font-bold bg-white p-5 h-fit rounded-full text-primarybold w-24 h-22 flex justify-center items-center"
               >3</i
             >
-            <p class="w-full font-semibold p-1">
+            <p class="w-full font-semibold p-1 max-sm:text-sm">
               Полировка зубов при помощи специальных паст и щеточек. Такая
               чистка устраняет все неровности скопившихся отложений, освежает и
               убирает неприятный запах.
             </p>
           </div>
 
-          <div class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl self-end shadow">
+          <div
+            class="flex gap-3 w-2/3 bg-[#BDF8F9] p-2 rounded-xl self-end shadow max-lg:w-full"
+          >
             <i
-              class="text-5xl font-bold bg-white p-5 rounded-full text-primarybold w-24 h-22 flex justify-center items-center"
+              class="h-fit text-5xl font-bold bg-white p-5 rounded-full text-primarybold w-24 h-22 flex justify-center items-center"
               >4</i
             >
-            <p class="w-full font-semibold py-1">
+            <p class="w-full font-semibold py-1 max-sm:text-sm">
               Покрытие зубов ременилизирующим гелем. Снимает чувствительность,
               предотвращает развитие кариеса.
             </p>
@@ -107,7 +117,7 @@
             </NuxtLink>
             <h4>спросить в мессенджере</h4>
           </div>
-          <div class="flex items-center justify-center gap-5">
+          <div class="flex items-center justify-center gap-5 max-sm:flex-col">
             <Button class="w-52 bg-second text-primary hover:shadow-lg">
               Записаться
             </Button>

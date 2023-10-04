@@ -25,6 +25,9 @@
     "@fortawesome/free-regular-svg-icons": "^6.4.2",
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "nuxt-swiper": "^1.2.2",
-    "swiper": "^10.3.1"
+    "swiper": "^10.3.1",
+    "vue-yandex-maps": "^0.11.16",
+    "yandex-maps": "^0.0.1",
+    "ymaps": "^0.2.1"
   }
 }

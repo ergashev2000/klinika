@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="reviews">
     <div class="max-container px-5 py-14">
       <h2 class="text-3xl font-semibold text-center">Услуги</h2>
       <p class="text-center text-lg text-primary font-semibold py-5">
@@ -11,7 +11,7 @@
       </p>
 
       <div class="w-full relative">
-        <SwiperCustom :view="2" loop>
+        <SwiperCustom :view="2" loop :breakpoints="breakpoints">
           <swiper-slide>
             <ReviewCard />
           </swiper-slide>
@@ -43,6 +43,16 @@
 <script setup lang="ts">
 import { SwiperSlide } from "swiper/vue";
 import SwiperCustom from "./SwiperCustom.vue";
+
+const breakpoints = {
+  320: {
+    slidesPerView: 1,
+  },
+  1200: {
+    slidesPerView: 2,
+  },
+
+};
 </script>
 
 <style scoped>
