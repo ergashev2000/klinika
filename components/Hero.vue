@@ -1,6 +1,6 @@
 <template>
   <section
-    class="bg-[url('~/assets/images/hero-banner.png')] bg-cover bg-center py-1"
+    class="bg-[url('~/assets/images/hero-banner.png')] bg-cover bg-center py-1 max-sm:bg-[50%] bg-no-repeat max-sm:bg-right-top"
   >
     <div class="max-container relative">
       <div class="space-y-6 p-5 py-14 max-sm:flex max-sm:flex-col max-sm:justify-center">
@@ -65,4 +65,11 @@
 import Button from "~/components/UI/Button.vue";
 </script>
 
-<style scoped></style>
+<style scoped>
+@media (max-width: 640px) {
+  .max-sm\:bg-\[50\%\] {
+    background-position: right top;
+    background-size: 150% auto;
+  }
+}
+</style>
