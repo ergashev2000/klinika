@@ -1,6 +1,6 @@
 <template>
   <form
-    class="p-10 rounded-xl bg-second space-y-3 flex flex-col gap-4 max-w-md w-full shadow-lg"
+    class="p-10 rounded-xl bg-second space-y-3 flex flex-col gap-4 max-w-md w-full shadow-lg max-sm:p-3 max-sm:space-y-1"
   >
     <h3 class="text-primarybold font-semibold text-lg text-center">
       Запишитесь на бесплатную первичную консультацию и диагностику зубов

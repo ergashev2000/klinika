@@ -20,7 +20,7 @@
               allowfullscreen
             ></iframe>
 
-            <Button class="w-fit px-16 bg-second text-brown">
+            <Button class="w-44 px-5 whitespace-nowrap bg-second text-brown">
               Узнать цены
             </Button>
           </div>

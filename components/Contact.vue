@@ -9,7 +9,7 @@
     ></iframe>
     <div class="max-container mx-auto">
       <div
-        class="max-w-md text-white bg-primary rounded-xl px-10 py-6 bg-opacity-80 absolute top-10 ml-10 space-y-5 w-full max-lg:left-0 max-lg:ml-0 max-lg:mx-2 max-sm:static max-sm:my-5 "
+        class="max-w-md text-white bg-primary rounded-xl px-10 py-6 bg-opacity-80 absolute top-10 ml-10 space-y-5 w-full max-lg:left-0 max-lg:ml-0 max-lg:mx-2 max-sm:static max-sm:my-5 max-sm:rounded-none "
       >
         <h3 class="text-3xl">Контакты</h3>
         <p>г. Коломна, ул. Октябрьской  революции д. 161</p>

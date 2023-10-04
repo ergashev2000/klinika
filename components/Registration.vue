@@ -4,7 +4,7 @@
       class="bg-[url('~/assets/images/registration-img.png')] bg-center bg-no-repeat bg-cover"
     >
       <div class="max-container">
-        <div class="flex justify-end p-5">
+        <div class="flex justify-end p-5 max-sm:p-2">
           <RegForm />
         </div>
       </div>

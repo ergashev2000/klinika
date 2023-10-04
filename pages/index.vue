@@ -1,5 +1,11 @@
 <template>
-  <MainLayout>
+  <div
+    class="fixed left-0 top-0 w-full h-screen bg-gray-300 z-50 flex justify-center items-center"
+    v-if="load"
+  >
+    <div class="lds-dual-ring"></div>
+  </div>
+  <MainLayout v-else>
     <Hero />
     <Consultant />
     <Discount />
@@ -27,6 +33,13 @@ import Licenses from "~/components/Licenses.vue";
 import Registration from "~/components/Registration.vue";
 import Contact from "~/components/Contact.vue";
 import MainLayout from "~/layouts/MainLayout.vue";
+
+const load = ref(true);
+
+setTimeout(() => {
+  load.value = false;
+}, 1000);
+
 </script>
 
 <style scoped></style>
